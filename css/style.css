@@ -1,0 +1,77 @@
+.wrapper {
+  background-image: url(../img/photo_6043895447019438423_x.jpg);
+  background-position: center;
+  background-size: cover;
+  
+  }
+  
+  .text-main {
+    color: blue;
+  }
+  
+  .w-35 {
+    width: 35%;
+  }
+  
+  div:has(> .capatcha-box) {
+    max-height: 70px;
+  }
+  
+  .btn-main {
+     --bs-btn-color: #fff; 
+    
+    --bs-btn-bg: blue;
+    --bs-btn-border-color: blue;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: blue;
+    --bs-btn-hover-border-color: blue;
+  }
+  
+  form .btn-main {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  input {
+    font-size: 20px;
+    padding-block: 12px !important;
+  }
+  
+  .border-main {
+    border: 2px solid blue;
+  }
+  
+  .border-main:focus {
+    box-shadow: none;
+    border: 2px solid darkmagenta;
+  }
+  
+  .capatcha-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 29px;
+    letter-spacing: 25px;
+  }
+  
+  @media (max-width: 992px) {
+    .wrapper > div {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper > div {
+      width: 75%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .wrapper > div {
+      width: 100%;
+    }
+  }
+  
